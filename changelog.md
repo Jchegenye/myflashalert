@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `flashalert` will be documented in this file.
+All notable changes to `myflashalert` will be documented in this file.
 
 ## Version 1.0
 

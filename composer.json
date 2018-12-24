@@ -1,43 +1,24 @@
 {
-    "name": "jchegenye/flashalert",
-    "description": "A simplified flash messaging for your Laravel application using Twitter Bootstrap 4",
-    "license": "license",
+    "name": "jchegenye/myflashalert",
+    "description": "A simplified flash messaging alert for your Laravel application using Twitter Bootstrap 4",
+    "license": "MIT",
     "authors": [
         {
             "name": "Chegenye A. Jackson",
             "email": "chegenyejackson@gmail.com",
-            "homepage": "https://jchegenye.me"
+            "homepage": "https://jchegenye.me",
+            "role": "Software Developer"
         }
     ],
-    "homepage": "https://github.com/jchegenye/flashalert",
-    "keywords": ["Laravel", "flashalert", "bootsrap", "sessions"],
+    "homepage": "https://github.com/jchegenye/myflashalert",
+    "keywords": ["laravel", "myflashalert", "bootsrap", "sessions", "alert", "flash", "message"],
     "require": {
+        "php": ">=5.6.4",
         "illuminate/support": "~5"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~7.0",
-        "mockery/mockery": "^1.1",
-        "orchestra/testbench": "~3.0",
-        "sempro/phpunit-pretty-print": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "jchegenye\\flashalert\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "jchegenye\\flashalert\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "jchegenye\\flashalert\\flashalertServiceProvider"
-            ],
-            "aliases": {
-                "flashalert": "jchegenye\\flashalert\\Facades\\flashalert"
-            }
+            "Jchegenye\\MyFlashAlert\\": "src/"
         }
     }
 }
