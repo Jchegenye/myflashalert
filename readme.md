@@ -24,33 +24,43 @@ Make sure you add Bootstrap to your project. You can choose to either use Bootst
 ```
 Inside your controllers, you can use any of the `HTTP Redirects` as mentioned [here][laravel-http-redirects] except `Redirecting With Flashed Session Data`. Instead replace `->with('success', 'Profile updated!')` with what this package provides as mentioned shown below.
 
-**Example**
+**Examples:-**
 
 ``` bash
 
+
     //Redirecting to named routes
-    public function store()
-    {
-        return redirect()->route('user')->success('Successfully added!');
-    }
+
+        public function store()
+        {
+            return redirect()->route('user')->success('Successfully added!');
+        }
 
     //Other redirects you can use
-    return redirect('user/edit')->success('Successfully edited!');
-    return redirect('user/delete')->warning('Delete?, continue...');
-    return redirect()->back()->error('Something went wrong!');
 
-... and much more redirects.
+        return redirect('user/edit')->success('Successfully edited!');
+        return redirect('user/delete')->warning('Delete?, continue...');
+        return redirect()->back()->error('Something went wrong!');
 
-Methods available for usage:-
+        //... and much more redirects.
 
-|Methods|Description|
-|:------------|:------------|
-|`success()`|Flash a success message|
-|`error()`|Flash error message|
-|`warning()`|Flash a warning message|
-|`info()`|Flash information message|
 
 ```
+
+To display flashed message in session, add below inside your view(s).
+
+``` bash
+@include('myflashalert::message')
+```
+
+**Methods available for usage**
+
+| **Methods** | **Description** |
+| --- | --- |
+| `success()` | Flash a success message |
+| `error()` | Flash error message |
+| `warning()` | Flash a warning message |
+| `info()` | Flash info message |
 
 ## Credits
 
