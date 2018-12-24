@@ -24,7 +24,7 @@ Make sure you add Bootstrap to your project. You can choose to either use Bootst
 ```
 Inside your controllers, you can use any of the `HTTP Redirects` as mentioned [here][laravel-http-redirects] except `Redirecting With Flashed Session Data`. Instead replace `->with()` method with any of methods i.e `->success()` provided by this package, see below.
 
-**Examples:-**
+## Examples
 
 ``` bash
 
@@ -53,14 +53,14 @@ To display flashed message in session, add below inside your view(s).
 @include('myflashalert::message')
 ```
 
-**Methods available for usage**
+## Methods available
 
 | **Methods** | **Description** |
 | --- | --- |
-| `success()` | Flash a success message |
-| `error()` | Flash error message |
-| `warning()` | Flash a warning message |
-| `info()` | Flash info message |
+| `->success()` | Flash a success message |
+| `->error()` | Flash error message |
+| `->warning()` | Flash a warning message |
+| `->info()` | Flash info message |
 
 ## Credits
 
