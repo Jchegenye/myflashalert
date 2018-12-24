@@ -24,5 +24,12 @@
         "psr-4": {
             "Jchegenye\\MyFlashAlert\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jchegenye\\MyFlashAlert\\MyFlashAlertServiceProvider"
+            ]
+        }
     }
 }
