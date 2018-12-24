@@ -22,7 +22,7 @@ Make sure you add Bootstrap to your project. You can choose to either use Bootst
 ``` bash
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 ```
-Inside your controllers, you can use any of the `HTTP Redirects` as mentioned [here][laravel-http-redirects] except `Redirecting With Flashed Session Data`. Instead replace `->with('success', 'Profile updated!')` with what this package provides as mentioned shown below.
+Inside your controllers, you can use any of the `HTTP Redirects` as mentioned [here][laravel-http-redirects] except `Redirecting With Flashed Session Data`. Instead replace `->with()` method with any of methods i.e `->success()` provided by this package, see below.
 
 **Examples:-**
 
