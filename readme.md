@@ -1,11 +1,11 @@
-# myflashalert
+# Simplified Flash Messaging Alert
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-A simplified flash messaging for your Laravel application using Twitter Bootstrap 4. Take a look at [contributing.md](contributing.md) to see a to do list.
+A simplified flash messaging for your Laravel application using Twitter [Bootstrap 4 (Alerts)][bootstrap4-alerts].
 
 ## Installation
 
@@ -17,23 +17,40 @@ $ composer require jchegenye/myflashalert
 
 ## Usage
 
-## Change log
-
-Please see the [changelog](changelog.md) for more information on what has changed recently.
-
-## Testing
+Make sure you add Bootstrap to your project. You can choose to either use BootstrapCDN provided for free (see below), download the source files [here][bootstrap4-cdn] or write your own CSS based on these classes.
 
 ``` bash
-$ composer test
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 ```
+Inside your controllers, you can use any of the `HTTP Redirects` as mentioned [here][laravel-http-redirects] except `Redirecting With Flashed Session Data`. Instead replace `->with('success', 'Profile updated!')` with what this package provides as mentioned shown below.
 
-## Contributing
+**Example**
 
-Please see [contributing.md](contributing.md) for details and a todolist.
+``` bash
 
-## Security
+    //Redirecting to named routes
+    public function store()
+    {
+        return redirect()->route('user')->success('Successfully added!');
+    }
 
-If you discover any security related issues, please [email][link-author-email] author instead of using the issue tracker.
+    //Other redirects you can use
+    return redirect('user/edit')->success('Successfully edited!');
+    return redirect('user/delete')->warning('Delete?, continue...');
+    return redirect()->back()->error('Something went wrong!');
+
+... and much more redirects.
+
+Methods available for usage:-
+
+|Methods|Description|
+|:------------|:------------|
+|`success()`|Flash a success message|
+|`error()`|Flash error message|
+|`warning()`|Flash a warning message|
+|`info()`|Flash information message|
+
+```
 
 ## Credits
 
@@ -42,7 +59,7 @@ If you discover any security related issues, please [email][link-author-email] a
 
 ## License
 
-license. Please see the [license file](license.md) for more information.
+Please see the [license file](license.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/jchegenye/myflashalert.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jchegenye/myflashalert.svg?style=flat-square
@@ -56,3 +73,7 @@ license. Please see the [license file](license.md) for more information.
 [link-author]: https://jchegenye.me
 [link-contributors]: https://jchegenye.me]
 [link-author-email]: mailto:chegenyejackson@gmail.com
+
+[bootstrap4-alerts]: https://getbootstrap.com/docs/4.0/components/alerts/
+[bootstrap4-cdn]: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+[laravel-http-redirects]: https://laravel.com/docs/5.7/redirects#redirecting-with-flashed-session-data
