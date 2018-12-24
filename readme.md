@@ -65,11 +65,6 @@ To display flashed message in session, add below inside your view(s).
 | `->warning()` | Flash a warning message |
 | `->info()` | Flash info message |
 
-## Credits
-
-- [Chegenye A. Jackson][link-author]
-- [All Contributors][link-contributors]
-
 ## License
 
 Please see the [license file](license.md) for more information.
