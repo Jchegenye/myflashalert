@@ -36,14 +36,17 @@ Inside your controllers, you can use any of the `HTTP Redirects` as mentioned [h
             return redirect()->route('user')->success('Successfully added!');
         }
 
-    //Other redirects you can use
+```
 
-        return redirect('user/edit')->success('Successfully edited!');
-        return redirect('user/delete')->warning('Delete?, continue...');
-        return redirect()->back()->error('Something went wrong!');
+``` bash
 
-        //... and much more redirects.
+    //Other redirects you can use ...
 
+    return redirect('user/edit')->success('Successfully edited!');
+    return redirect('user/delete')->warning('Delete?, continue...');
+    return redirect()->back()->error('Something went wrong!');
+
+    //... and much more redirects.
 
 ```
 
