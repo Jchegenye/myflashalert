@@ -1,9 +1,7 @@
 # Simplified Flash Messaging Alert
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
+
+
 
 A simplified flash messaging for your Laravel application using Twitter [Bootstrap 4 (Alerts)][bootstrap4-alerts].
 
