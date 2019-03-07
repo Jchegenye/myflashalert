@@ -73,7 +73,7 @@ Please see the [license file](license.md) for more information.
 [ico-travis]: https://img.shields.io/travis/jchegenye/myflashalert/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/jchegenye/myflashalert
+[link-packagist]: https://packagist.org/packages/jchegenye/myflashalert#v1.0.2
 [link-downloads]: https://packagist.org/packages/jchegenye/myflashalert
 [link-travis]: https://travis-ci.org/jchegenye/myflashalert
 [link-styleci]: https://styleci.io/repos/12345678
