@@ -58,7 +58,6 @@ class MyFlashAlertTest extends TestCase
     {
         
         $this->alerts->success('Successfull'); //put values into session
-
         $this->session = session()->get('myflashalert_session'); //get session key
 
         //dd($this->session);
@@ -74,7 +73,6 @@ class MyFlashAlertTest extends TestCase
     {
         
         $this->alerts->error('Not successfull'); //put values into session
-
         $this->session = session()->get('myflashalert_session'); //get session key
 
         //dd($this->session->level);
@@ -90,7 +88,6 @@ class MyFlashAlertTest extends TestCase
     {
         
         $this->alerts->warning('About to delete!'); //put values into session
-
         $this->session = session()->get('myflashalert_session'); //get session key
 
         //dd($this->session);
@@ -106,7 +103,6 @@ class MyFlashAlertTest extends TestCase
     {
         
         $this->alerts->info('There is a new update!'); //put values into session
-
         $this->session = session()->get('myflashalert_session'); //get session key
 
         //dd($this->session);
